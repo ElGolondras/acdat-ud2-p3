@@ -97,7 +97,7 @@ public class MiniAdminSwitch {
         }
         if (objetivo.isDirectory()) {
             String[] contenido = objetivo.list();
-            if (contenido == null) {
+            if (contenido.length == 0) {
                 throw new IOException("No se pudo listar");
             }
             if (contenido.length > 0) {
